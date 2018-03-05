@@ -14,7 +14,7 @@ Usage: ./get-aws-profile.sh [--credentials=<path>] [--profile=<name>] [--key|--s
     FOO_SECRET=$(./get-aws-profile.sh --profile=myprofile --secret)
 ```
 
-A script is also provided to write the environment variables to a file (~/.zshrc by default) instead of evaluating get-aws-profile.sh for every new terminal window.
+A script is also provided to write the environment variables outputted from get-aws-profile.sh to a file (~/.zshrc by default) instead of evaluating get-aws-profile.sh for every new terminal window.
 
 ```
 $ ./set-aws-profile.sh <file>
@@ -26,6 +26,7 @@ $ ./set-aws-profile.sh <file>
 $ ./get-aws-profile.sh --profile my-example
 export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
 export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+export AWS_SECURITY_TOKEN=...
 
 $ eval $(./get-aws-profile.sh --profile my-example)
 ```
