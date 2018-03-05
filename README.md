@@ -14,6 +14,12 @@ Usage: ./get-aws-profile.sh [--credentials=<path>] [--profile=<name>] [--key|--s
     FOO_SECRET=$(./get-aws-profile.sh --profile=myprofile --secret)
 ```
 
+A script is also provided to write the environment variables to a file (~/.zshrc by default) instead of evaluating get-aws-profile.sh for every new terminal window.
+
+```
+$ ./set-aws-profile.sh <file>
+```
+
 ## Set environment variables for 'my-example' profile
 
 ```
