@@ -124,7 +124,7 @@ fi
 if [[ "${SHOW_KEY}" = false && "${SHOW_SECRET}" = false ]]; then
   echo "export AWS_ACCESS_KEY_ID=${aws_access_key_id}"
   echo "export AWS_SECRET_ACCESS_KEY=${aws_secret_access_key}"
-  echo "export AWS_SECURITY_TOKEN=${aws_security_token}"
+  echo "export AWS_SESSION_TOKEN=${aws_security_token}"
 elif [[ "${SHOW_KEY}" = true ]]; then
   echo -n "${aws_access_key_id}"
 elif [[ "${SHOW_SECRET}" = true ]]; then
